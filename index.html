@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfólio | Giovanni Machado</title>
+</head>
+<body>
+    <div class="particulas"></div>
+     
+
+    <nav class="navegacao">
+        <ul class="menu">
+            <li><a href="#inicio" class="menu-link">Início</a></li>
+            <li><a href="#sobre" class="menu-link">Sobre</a></li>
+            <li><a href="#projetos" class="menu-link">Projetos</a></li>
+            <li><a href="#contatos" class="menu-link">Contatos</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="cabecalho">
+        <img src="./imgs/terno.jpg" alt="Foto de Giovanni Machado" class="foto-perfil">
+        <h1>Giovanni Machado</h1>
+        <p>Técnico em Informática</p>
+    </header>
+
+    <main>
+        <section id="sobre" class="sobre"> 
+            <h2 class="sobre-titulo">Sobre Mim</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">
+                    Sou técnico em informática, com conhecimentos básicos em programação, lógica de algoritmos
+                    e desenvolvimento de sistemas. Possuo experiência com instalação e configuração de sistemas,
+                    manutenção de computadores e noções de redes. Sou organizado, responsável e tenho facilidade
+                    para aprender, buscando sempre evoluir na área de programação e tecnologia.
+                </p>
+            </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+            <h2 class="projetos-titulos">Meus Projetos</h2>
+            
+            <div class="projetos-caixa">
+                <div class="projetos-card">
+                    <img src="./imgs/inte.png" alt="Projeto 1" class="projetos-img">
+                    <h3 class="inf-projetos">Totem McDonalds</h3>
+                    <p class="paragrafo-projetos">Totem de celular com visual do McDonalds, usado para fins pedagógicos.</p>
+                </div>
+
+                <div class="projetos-card">
+                    <img src="./imgs/inte.png" alt="Projeto 2" class="projetos-img">
+                    <h3 class="inf-projetos">Dados de Drone</h3>
+                    <p class="paragrafo-projetos">Um site onde irá armazenar os dados coletados por um drone, usado para fins pedagógicos.</p>
+                </div>
+
+                <div class="projetos-card">
+                    <img src="./imgs/inte.png" alt="Projeto 3" class="projetos-img">
+                    <h3 class="inf-projetos">Central V-Veio</h3>
+                    <p class="paragrafo-projetos">Alertas de segurança enviados para uma pulseira, usado para fins pedagógicos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contatos" class="contatos"> 
+            <h2 class="contatos-titulo">Entre em Contato</h2>
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="grupo-form">
+                    <input type="text" placeholder="Seu Nome" class="campo-form" id="nome">
+                </div>
+                <div class="grupo-form">
+                    <textarea class="campo-form" placeholder="Digite sua mensagem" rows="4" id="mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
